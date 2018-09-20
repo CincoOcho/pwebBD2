@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> WEB para BD Biblioteca</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="http://localhost:8080/pwebBD2/Servletjava" method="post">
+                      
+            ID Libro: <input type="text" name="id_libro"><br>        
+            Nombre:   <input type="text" name="nombre"><br>                             <!--INGRESAR DATOS EN BD-->
+            Editorial: <input type="text" name="editorial"><br>      
+            Paginas:   <input type="text" name="numero_pagina"><br>
+            <input type="submit" value="Insertar" name="inser">
+            
+        </form>
+        <br>
+        <br>
+        
+        <form action="http://localhost:8080/pwebBD2/Consulta" method="post">        <!--CONSULTAR EN BD-->
+            <p> Consultar Base de datos 'Biblioteca' //</p>
+                                                                              
+           <input type="submit" value="Consultar" name="consulta">    
+        </form>
+        <br><br>
+        
+        <form action="http://localhost:8080/pwebBD2/Modifica" method="post"> 
+            <p> Modificar libro en Base de datos //</p>                                 <!--MODIFICA EN BD-->
+            ID de libro: <input type="text" name="id_libro2">                        
+            <br> 
+            <input type="submit" value="Modifica" name="modifica">
+        </form>
+        <br><br>
+        
+        <form action="http://localhost:8080/pwebBD2/Elimina" method="post">             <!--ELIMINA EN BD-->
+            
+            <p> Elimina libro de la Base de datos //</p>
+            ID de libro: <input type="text" name="id_libro3">                        
+            <br> 
+            <input type="submit" value="Elimina" name="elimina">
+        </form>
+        <br><br>
+        
+        
+    </body>
+</html>
